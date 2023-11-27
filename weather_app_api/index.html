@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/main.js" defer></script>
+<title>Weather App</title>
+</head>
+<body id="bg">
+    <h1 class="text-center mt-3">Weather App API</h1>
+    <!-- Weather App HTML Elements -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">   
+                <section class="form-group weather-form mt-3 mb-3">
+                    <!-- API Content Here -->                   
+                <form id="weatherForm">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="City" required>
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" placeholder="Country" required>
+                    <button type="button" class="btn btn-outline-dark btn-sm" onclick="getWeather()"><i class="bi bi-cloud-sun-fill"></i>Get Weather</button>
+                </form>        
+                </section>      
+            </div>
+        </div>         
+    </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center text-center">
+                <div id="weatherInfo"></div>
+            </div>
+        </div>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
